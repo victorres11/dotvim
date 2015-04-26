@@ -1,5 +1,8 @@
-call pathogen#runtime_append_all_bundles()
+"call pathogen#runtime_append_all_bundles()
+execute pathogen#infect()
 call pathogen#helptags()
+
+let g:syntastic_python_checkers = ['pylint', 'pyflakes', 'pep8', 'python']
 
 syntax on
 set nu 
